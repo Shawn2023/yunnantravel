@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>云南行程计划详情版</title>
+  <style>
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #26363d;
+      margin: 34px 38px;
+      line-height: 1.55;
+      font-size: 8.5pt;
+      background: #fffdf9;
+    }
+    h1, h2, h3, h4 {
+      color: #224c51;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 10pt;
+      text-align: center;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 8.5pt;
+      border-bottom: 1px solid #d9e6e3;
+      padding-bottom: 3px;
+    }
+    h3 {
+      font-size: 8.5pt;
+    }
+    h4 {
+      font-size: 8.5pt;
+      margin-bottom: 4px;
+    }
+    p {
+      margin: 4px 0 8px 0;
+    }
+    ul {
+      margin: 4px 0 8px 18px;
+      padding: 0;
+    }
+    li {
+      margin: 2px 0;
+    }
+    .subtitle {
+      text-align: center;
+      color: #5d7378;
+      font-size: 8.5pt;
+      margin-bottom: 16px;
+    }
+    .hero {
+      width: 100%;
+      max-width: 760px;
+      display: block;
+      margin: 0 auto 14px auto;
+      border-radius: 10px;
+      border: 1px solid #d7e5e2;
+    }
+    .section-visual {
+      width: 100%;
+      max-width: 720px;
+      display: block;
+      margin: 8px auto 12px auto;
+      border-radius: 9px;
+      border: 1px solid #dbe5e2;
+      background: #f7fbfa;
+    }
+    .note {
+      background: #eef7f5;
+      border-left: 3px solid #5d9c97;
+      padding: 8px 10px;
+      margin: 10px 0 12px 0;
+      border-radius: 5px;
+    }
+    .grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px 0;
+    }
+    .grid th,
+    .grid td {
+      border: 1px solid #d8e4e1;
+      padding: 7px 8px;
+      vertical-align: top;
+      font-size: 8.5pt;
+    }
+    .grid th {
+      width: 80px;
+      background: #f2f8f7;
+      text-align: left;
+    }
+    .small {
+      color: #62787d;
+      font-size: 8.5pt;
+    }
+    .two-col {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px 0;
+    }
+    .two-col td {
+      width: 50%;
+      vertical-align: top;
+      padding-right: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>云南行程计划详情版</h1>
+  <div class="subtitle">2026-08-06 至 2026-08-11｜深圳往返｜昆明 1 天 + 大理 2 天 + 丽江 2 天｜带小朋友轻松线</div>
+
+  <svg class="hero" xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="云南雪山洱海与米线插图">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#d8f0ff"/>
+        <stop offset="100%" stop-color="#fef7e7"/>
+      </linearGradient>
+      <linearGradient id="lake" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7cc9d8"/>
+        <stop offset="100%" stop-color="#9fe0c9"/>
+      </linearGradient>
+      <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6c8891"/>
+        <stop offset="100%" stop-color="#46646c"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="520" fill="url(#sky)"/>
+    <circle cx="970" cy="110" r="54" fill="#ffd67a" opacity="0.9"/>
+    <path d="M90 350 L250 170 L400 350 Z" fill="url(#mountain)"/>
+    <path d="M250 170 L315 255 L205 255 Z" fill="#f7fbff" opacity="0.95"/>
+    <path d="M290 350 L470 140 L650 350 Z" fill="#5f7b84"/>
+    <path d="M470 140 L540 235 L415 235 Z" fill="#f7fbff" opacity="0.95"/>
+    <path d="M520 350 L710 185 L870 350 Z" fill="#78939a"/>
+    <path d="M710 185 L765 250 L655 250 Z" fill="#f7fbff" opacity="0.92"/>
+    <ellipse cx="610" cy="404" rx="520" ry="78" fill="url(#lake)"/>
+    <ellipse cx="610" cy="420" rx="450" ry="32" fill="#ffffff" opacity="0.28"/>
+    <path d="M840 330 C890 308 960 308 1010 330" fill="none" stroke="#f8f1da" stroke-width="18" stroke-linecap="round"/>
+    <path d="M838 332 C890 358 958 358 1012 332" fill="none" stroke="#b88953" stroke-width="18" stroke-linecap="round"/>
+    <ellipse cx="925" cy="365" rx="115" ry="26" fill="#f3f3f3"/>
+    <path d="M850 360 C880 332 970 332 1000 360" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M868 356 C894 378 957 378 982 356" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <text x="90" y="95" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" fill="#35535d">云南轻松亲子行</text>
+    <text x="90" y="138" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="18" fill="#58737c">雪山、洱海、古城与一碗热米线</text>
+  </svg>
+
+  <div class="note">
+    这版的核心思路是“少折腾、留余量、默认走稳妥线”。昆明只做落地休整；大理重点玩古城、云上草原、喜洲和洱海轻松线；丽江进入玉龙雪山景区，但默认选择云杉坪 + 蓝月谷，不把高海拔冲顶当刚需。整体以孩子游玩和拍照为主。
+  </div>
+
+  <h2>一、已确认信息</h2>
+  <ul>
+    <li>出发：2026-08-06 09:25 深圳宝安国际机场 T3 → 昆明长水机场，航班 ZH9453。</li>
+    <li>返回：2026-08-11 10:50 丽江三义机场 → 深圳宝安国际机场 T3，航班 ZH8980。</li>
+    <li>整体节奏：1 天昆明，2 天大理，2 天丽江。</li>
+    <li>交通主线：昆明高铁到大理，在大理高铁站取车；丽江机场还车后直接返程。</li>
+    <li>古城策略：只保留一个主古城体验，优先大理古城；丽江改成白沙或束河轻松拍照线。</li>
+  </ul>
+
+  <h2>二、推荐行程总览</h2>
+  <table class="grid">
+    <tr>
+      <th>D1</th>
+      <td><strong>深圳 → 昆明</strong><br>入住昆明站或塘子巷附近，下午逛昆明老街、南屏街，晚上吃米线或云南菜，保持轻松节奏。</td>
+    </tr>
+    <tr>
+      <th>D2</th>
+      <td><strong>昆明 → 大理</strong><br>高铁前往大理，抵达后取车并入住大理古城或 S 湾附近；下午逛古城，傍晚去才村、龙龛或 S 湾看日落。</td>
+    </tr>
+    <tr>
+      <th>D3</th>
+      <td><strong>大理深度游</strong><br>优先安排云上草原，上午坐缆车、草地活动和拍照；中午顺路吃饭；下午接喜洲古镇 + 海西轻松线，或者只保留洱海边拍照、散步和孩子活动。若天气不好，再改走海东线分段玩。</td>
+    </tr>
+    <tr>
+      <th>D4</th>
+      <td><strong>大理 → 丽江</strong><br>自驾转场到丽江，入住束河古镇或白沙附近；下午和晚上去白沙或束河慢逛、拍照、让孩子活动，安排一顿稳定正餐，不再把大研古城当主重点。</td>
+    </tr>
+    <tr>
+      <th>D5</th>
+      <td><strong>玉龙雪山景区</strong><br>默认方案为云杉坪小索道 + 蓝月谷；若天气、票务、孩子状态都很好，再临时考虑高海拔备选线。晚上回城吃腊排骨火锅。</td>
+    </tr>
+    <tr>
+      <th>D6</th>
+      <td><strong>丽江 → 深圳</strong><br>把车保留到临走前，直接从住处开去丽江机场还车并返程，当天不再安排额外景点。</td>
+    </tr>
+  </table>
+
+  <h2>三、每天怎么走更顺</h2>
+  <h3>D1 昆明</h3>
+  <ul>
+    <li>建议住昆明站、塘子巷或环城南路一带，方便第二天去高铁站。</li>
+    <li>落地当天不加滇池、石林等远线景点，昆明老街 + 南屏街足够。</li>
+    <li>晚餐建议选过桥米线、汽锅鸡或云南家常菜，早点休息。</li>
+  </ul>
+
+  <h3>D2 大理</h3>
+  <ul>
+    <li>昆明到大理高铁最稳，二等座通常约 140-160 元 / 人。</li>
+    <li>到大理后取车并入住，大理古城适合第一次去；S 湾附近适合喜欢海边氛围。</li>
+    <li>当天下午主打古城 + 洱海日落，不建议再跑双廊，节奏会太赶。</li>
+  </ul>
+
+  <h3>D3 大理</h3>
+  <ul>
+    <li>亲子优先时，晴天把云上草原放到大理这天的主项目，孩子通常会比单纯逛点位更有参与感。</li>
+    <li>下午再接喜洲古镇 + 海西轻松线，或者只留洱海边拍照、散步和简单补给，不要把环海塞太满。</li>
+    <li>如果天气偏阴雨，云上草原体验会下降，这天就改回海东线分段玩，双廊、小普陀、文笔村、理想邦更容易出片。</li>
+  </ul>
+
+  <h3>D4 丽江</h3>
+  <ul>
+    <li>大理到丽江自驾约 2-3 小时，大理取车、车一直保留到返程当天，最后在丽江机场还车，是本次最顺的方案。</li>
+    <li>入住束河更安静；住白沙更适合拍照和亲子慢逛。</li>
+    <li>晚上优先找口碑稳定的纳西菜或家常菜，不建议再专门去大研古城赶场。</li>
+  </ul>
+
+  <h3>D5 玉龙雪山景区</h3>
+  <ul>
+    <li>默认稳妥线：景区进山后走云杉坪小索道，再步行转到蓝月谷慢逛。</li>
+    <li>云杉坪下索道后步行去蓝月谷约 600 米、8-10 分钟，下坡为主，比等景区大巴更省时。</li>
+    <li>蓝月谷建议按玉液湖 → 镜潭湖 → 蓝月湖 → 听涛湖的顺序慢慢走，下午 3 点后光线更柔和。</li>
+  </ul>
+
+  <h2>四、雪山双方案</h2>
+  <table class="grid">
+    <tr>
+      <th>方案 A</th>
+      <td><strong>默认稳妥线</strong><br>玉龙雪山景区 + 云杉坪小索道 + 蓝月谷。适合带小朋友，体力消耗和高海拔风险更可控。</td>
+    </tr>
+    <tr>
+      <th>方案 B</th>
+      <td><strong>临时高海拔备选线</strong><br>只有在天气、票务、孩子状态都好时，才临时考虑冰川大索道高海拔线，不建议提前锁死。</td>
+    </tr>
+  </table>
+  <ul>
+    <li>出发前一天晚上和当天早上，都看一次天气、余票和孩子状态。</li>
+    <li>孩子若有感冒、鼻塞、没睡好、没吃早餐，直接按方案 A 执行。</li>
+    <li>只要出现头痛、恶心、犯困、脸色差、哭闹异常、明显喘，就不要继续往更高海拔走。</li>
+  </ul>
+
+  <h2>五、玉龙雪山门票怎么选</h2>
+  <ul>
+    <li>默认推荐组合：景区进山票 + 景区交通票 + 云杉坪小索道票。</li>
+    <li>如果当天只想轻松玩蓝月谷：景区进山票 + 蓝月谷交通即可，通常不用买云杉坪票。</li>
+    <li>如果临时想走更高海拔线，则需要看冰川大索道相关票，不是现在默认这套。</li>
+    <li>购票优先官方微信渠道，重点看是否包含进山票、交通票、索道票，以及儿童票、改签、退改规则。</li>
+    <li>旺季建议至少提前 1-3 天看票，别拖到前一晚太晚。</li>
+  </ul>
+
+  <h2>六、住宿与预算参考</h2>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="大理洱海与古镇插图">
+    <defs>
+      <linearGradient id="sky-erhai" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#dff3ff"/>
+        <stop offset="100%" stop-color="#fff6e8"/>
+      </linearGradient>
+      <linearGradient id="water-erhai" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7bc8df"/>
+        <stop offset="100%" stop-color="#96e0cf"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="420" fill="url(#sky-erhai)"/>
+    <circle cx="980" cy="90" r="42" fill="#ffd885"/>
+    <rect x="0" y="268" width="1200" height="152" fill="url(#water-erhai)"/>
+    <path d="M0 290 C160 250 330 250 470 292 C620 336 770 334 1200 275 L1200 420 L0 420 Z" fill="#8dd9c8" opacity="0.55"/>
+    <path d="M120 265 L220 180 L320 265 Z" fill="#f5f0e8"/>
+    <rect x="145" y="215" width="150" height="70" fill="#fbf7ef"/>
+    <rect x="176" y="234" width="28" height="26" fill="#97c0d1"/>
+    <rect x="236" y="234" width="28" height="26" fill="#97c0d1"/>
+    <rect x="206" y="245" width="28" height="40" fill="#b68258"/>
+    <path d="M335 265 L410 200 L485 265 Z" fill="#efe6db"/>
+    <rect x="352" y="228" width="116" height="57" fill="#fffaf3"/>
+    <rect x="370" y="244" width="24" height="20" fill="#9fc7d7"/>
+    <rect x="425" y="244" width="24" height="20" fill="#9fc7d7"/>
+    <path d="M540 285 C610 205 700 205 775 285" fill="none" stroke="#c7a370" stroke-width="14" stroke-linecap="round"/>
+    <path d="M551 286 C614 226 688 226 760 286" fill="none" stroke="#f6ead8" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="660" cy="302" rx="138" ry="18" fill="#ffffff" opacity="0.35"/>
+    <text x="88" y="82" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="30" fill="#305962">大理洱海慢时光</text>
+    <text x="88" y="118" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5c777b">古城、海风、白族民居与日落</text>
+  </svg>
+
+  <div class="note">
+    这次如果以小朋友出行为先，住宿建议尽量选酒店而不是纯民宿。核心标准就 4 个：卫生稳定、空调和热水稳定、停车方便、晚上安静。除非特别想住景观房，否则优先选连锁或评分稳定的新一点酒店。
+  </div>
+  <table class="grid">
+    <tr>
+      <th>昆明</th>
+      <td>昆明站 / 塘子巷附近。舒适型约 250-450 元 / 晚；条件更好的品牌酒店约 450-700 元 / 晚。</td>
+    </tr>
+    <tr>
+      <th>大理</th>
+      <td>大理古城附近吃饭和出行最方便；S 湾、龙龛、才村更适合海边氛围。舒适型约 300-600 元 / 晚，景观民宿约 500-1200 元 / 晚。</td>
+    </tr>
+    <tr>
+      <th>丽江</th>
+      <td>束河古镇更安静；白沙更松弛、更适合拍照。舒适型客栈约 300-700 元 / 晚，景观或精品客栈约 600-1000 元 / 晚。</td>
+    </tr>
+  </table>
+
+  <h3>酒店优先推荐思路</h3>
+  <ul>
+    <li>昆明：只住一晚，优先昆明站、塘子巷、环城南路附近的标准型连锁酒店，重点看干净、安静、第二天去高铁站方便，不需要为了景观多花钱。</li>
+    <li>大理：优先大理古城外围或 S 湾附近的酒店式住宿，最好带电梯、停车位和家庭房。带小孩不建议住古城深巷里的老院子型民宿，搬行李和停车都更折腾。</li>
+    <li>丽江：优先束河外围或白沙附近的酒店、度假酒店或做得比较规范的精品酒店，尽量不要选只强调拍照但房间维护一般的网红民宿。</li>
+    <li>如果同价位可选“精品民宿”和“成熟连锁酒店”，这次更建议先选酒店，原因是卫生、隔音、床品和亲子出行稳定性通常更好。</li>
+  </ul>
+
+  <h3>你这次更适合的房型和筛选条件</h3>
+  <ul>
+    <li>房型优先：双床房、家庭房，或者 1 张大床 + 1 张沙发床的房型，尽量不要赌现场能不能加床。</li>
+    <li>硬性筛选：近 1 年装修或近几年新开业、评分稳定、真实住客评价里少出现“潮湿、异味、隔音差、热水不稳”。</li>
+    <li>带娃更重要：有早餐、有洗衣服务或自助洗衣、离主路不太远、夜间安静、打车和停车方便。</li>
+    <li>不要只看照片。先看差评，尤其留意卫生间返味、空调不给力、木质民宿发潮、楼梯太多这些问题。</li>
+  </ul>
+
+  <h3>预算怎么抓更稳</h3>
+  <ul>
+    <li>昆明：一晚以 300-500 元区间找标准酒店最稳，已经够干净实用。</li>
+    <li>大理：如果要住得更舒服，建议按 450-800 元 / 晚看酒店型住宿，通常比低价民宿更稳。</li>
+    <li>丽江：建议按 400-800 元 / 晚看束河或白沙附近的酒店型住宿，既能保证环境，也不会太夸张。</li>
+    <li>暑假旺季如果价格明显偏低，要多看评论和开业时间，便宜往往是位置偏、维护差或停车不方便。</li>
+  </ul>
+
+  <h3>用车与交通</h3>
+  <ul>
+    <li>租车常见约 200-400 元 / 天起，不含保险增项、油费和异地还车费。</li>
+    <li>大理取车、丽江机场还车通常会有异地还车费，预订时要先确认。</li>
+    <li>丽江机场还车建议至少比航班起飞提前 2.5 小时到达，并提前确认机场还车点位置和验车流程。</li>
+  </ul>
+
+  <h3>停车建议</h3>
+  <ul>
+    <li>昆明：如果只是落地住一晚，优先选带地下停车场或合作停车场的酒店，第二天直接去高铁站更省心，不建议在昆明老街周边临时找路边车位。</li>
+    <li>大理古城：古城核心区很多路段不适合直接开进去，建议住古城外围、南门附近或有自带停车位的民宿，先停车再步行进古城。</li>
+    <li>S 湾、龙龛、才村：这几个点更适合短停拍照和散步，旺季下午到傍晚停车会紧张，尽量早点到，不要指望景观点门口一定有位。</li>
+    <li>喜洲和云上草原：自驾更方便，但都建议把车停在官方或正规停车场，不要图近停在路边，旺季更容易被贴单或堵别人出车。</li>
+    <li>丽江束河、白沙：优先订“可停车、步行进古镇 5-10 分钟内”的住处，比把车直接开到古镇口找位更稳。</li>
+    <li>玉龙雪山：建议早出发，按景区正规停车区停放，不要在外围临停；车上不要放显眼行李，贵重物品随身带。</li>
+    <li>订房时直接问清 4 件事：是否免费停车、车位是否保留、停车场到房间要不要接驳、晚上晚归还有没有位置。</li>
+  </ul>
+
+  <h3>云上草原补充建议</h3>
+  <ul>
+    <li>如果这趟更看重孩子体验，云上草原优先级高于再补多个海边打卡点。</li>
+    <li>建议单独占大理半天到大半天，不要和整圈环海拼在同一天。</li>
+    <li>出发前查看天气、开放情况和官方票务页面，晴天价值明显更高。</li>
+  </ul>
+
+  <h2>七、特色美食怎么吃更顺</h2>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="云南特色美食插图">
+    <defs>
+      <linearGradient id="food-bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff7ea"/>
+        <stop offset="100%" stop-color="#f7fbf5"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="420" fill="url(#food-bg)"/>
+    <ellipse cx="365" cy="258" rx="188" ry="74" fill="#f6f0ea"/>
+    <ellipse cx="365" cy="247" rx="165" ry="55" fill="#fffdf9" stroke="#d8d0c8" stroke-width="6"/>
+    <path d="M250 244 C295 214 335 279 382 230 C420 192 460 255 493 228" fill="none" stroke="#f0b85d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M245 262 C282 244 310 274 343 246 C380 214 413 278 475 240" fill="none" stroke="#8cbc69" stroke-width="9" stroke-linecap="round"/>
+    <path d="M300 221 C315 201 333 201 347 222" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M350 210 C364 190 382 191 395 212" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M405 214 C418 193 438 193 451 214" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="853" cy="256" rx="198" ry="80" fill="#efe4d8"/>
+    <ellipse cx="853" cy="244" rx="171" ry="60" fill="#7f4b35"/>
+    <ellipse cx="853" cy="244" rx="139" ry="45" fill="#9b5d41"/>
+    <circle cx="786" cy="231" r="18" fill="#d8b28d"/>
+    <circle cx="842" cy="250" r="20" fill="#d8b28d"/>
+    <circle cx="900" cy="228" r="18" fill="#d8b28d"/>
+    <circle cx="936" cy="257" r="16" fill="#d8b28d"/>
+    <path d="M760 221 C776 234 789 238 805 243" fill="none" stroke="#83b66f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M875 216 C892 228 904 233 922 239" fill="none" stroke="#83b66f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M820 216 C832 200 846 198 860 217" fill="none" stroke="#ececec" stroke-width="4" stroke-linecap="round"/>
+    <path d="M900 209 C912 192 926 192 939 210" fill="none" stroke="#ececec" stroke-width="4" stroke-linecap="round"/>
+    <text x="104" y="90" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="30" fill="#6b4f36">云南味道</text>
+    <text x="104" y="126" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#8a6c54">过桥米线与腊排骨火锅</text>
+  </svg>
+  <table class="two-col">
+    <tr>
+      <td>
+        <h3>昆明</h3>
+        <ul>
+          <li>优先吃：过桥米线、小锅米线、汽锅鸡、鲜花饼。</li>
+          <li>适合区域：昆明老街、南屏街、顺城；或昆明站、塘子巷附近。</li>
+          <li>带娃更稳：米线、汽锅鸡、炒时蔬这类热食优先。</li>
+        </ul>
+      </td>
+      <td>
+        <h3>大理</h3>
+        <ul>
+          <li>优先吃：喜洲粑粑、白族酸辣鱼、黄焖鸡、木瓜水、梅子饮。</li>
+          <li>适合区域：大理古城适合正餐；喜洲适合中午顺路吃；海边更适合拍照、散步和简单补给。</li>
+          <li>安排建议：D2 晚上古城吃正餐，D3 中午喜洲吃白族家常菜。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>丽江</h3>
+        <ul>
+          <li>优先吃：腊排骨火锅、纳西烤肉、鸡豆凉粉。</li>
+          <li>适合区域：束河、白沙适合慢逛和拍照；如果想吃更稳的正餐，丽江城区或古城外围选择更多。</li>
+          <li>D5 雪山回来最适合直接吃腊排骨火锅或汤锅。</li>
+        </ul>
+      </td>
+      <td>
+        <h3>饮食注意</h3>
+        <ul>
+          <li>野生菌只在正规餐厅吃，不要随便尝来源不明的菌子。</li>
+          <li>带小朋友时，不要一路全吃小吃，正餐以热食、汤类、米线、火锅为主。</li>
+          <li>网红店可以试，但不要为了排队影响行程节奏。</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <h2>八、出发前打包清单</h2>
+  <h3>成人衣物</h3>
+  <ul>
+    <li>短袖 3-4 件，薄长袖 1-2 件。</li>
+    <li>轻薄外套 1 件，稍保暖外套 1 件。</li>
+    <li>长裤 2 条，睡衣 1 套，袜子 5-6 双。</li>
+  </ul>
+
+  <h3>小朋友衣物</h3>
+  <ul>
+    <li>短袖 3-4 件，薄长袖 2 件，薄外套 1 件，稍厚外套 1 件。</li>
+    <li>长裤 2-3 条，随身备用衣裤至少 1 套。</li>
+    <li>内衣裤和袜子比成人多带 1-2 套更稳。</li>
+  </ul>
+
+  <h3>必带物品</h3>
+  <ul>
+    <li>遮阳帽、墨镜、围巾或薄披肩。</li>
+    <li>折叠伞、轻便雨衣、防晒霜、润唇膏。</li>
+    <li>舒服耐走的运动鞋，最好防滑。</li>
+    <li>身份证、驾驶证、手机、充电器、充电宝、订单截图。</li>
+  </ul>
+
+  <h3>雪山当天单独准备</h3>
+  <ul>
+    <li>厚一点的外套、长裤、备用袜子。</li>
+    <li>水、面包、饼干、能量棒等小零食。</li>
+    <li>可备 1 小瓶氧气应急，但不要把它当成硬冲高海拔的保障。</li>
+  </ul>
+
+  <h2>九、最后的执行建议</h2>
+  <div class="note">
+    这次最重要的不是把每个点都打满，而是保证节奏稳定。先按稳妥方案把酒店、交通、雪山默认票务准备好；雪山当天只在天气、票务、孩子状态都很好时，才考虑临时切到高海拔备选线。
+  </div>
+
+  <h2>十、路线图示意</h2>
+  <p>下面这组路线图用于快速看每天的点位顺序和串联关系，方便出发前统一理解行程。它是行程示意图，不替代高德或百度导航。</p>
+
+  <h3>全程路线总览</h3>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-label="云南全程路线总览图">
+    <rect width="1400" height="420" fill="#fffdf8"/>
+    <text x="80" y="72" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1f4d57" font-weight="700">云南亲子行程路线总览</text>
+    <text x="80" y="108" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#587278">按当前方案：大理加入云上草原，丽江主线为云杉坪 + 蓝月谷</text>
+    <line x1="150" y1="220" x2="1250" y2="220" stroke="#9cc8bf" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="170" cy="220" r="34" fill="#d9764a"/>
+    <text x="170" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D1</text>
+    <text x="170" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">昆明老街</text>
+    <text x="170" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">南屏街</text>
+    <circle cx="390" cy="220" r="34" fill="#d99a3e"/>
+    <text x="390" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D2</text>
+    <text x="390" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">大理古城</text>
+    <text x="390" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">才村 / 龙龛 / S 湾</text>
+    <circle cx="610" cy="220" r="34" fill="#7fa34a"/>
+    <text x="610" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D3</text>
+    <text x="610" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">云上草原</text>
+    <text x="610" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">喜洲 + 洱海轻松线</text>
+    <circle cx="830" cy="220" r="34" fill="#4c98a8"/>
+    <text x="830" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D4</text>
+    <text x="830" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">大理 → 丽江</text>
+    <text x="830" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">白沙 / 束河慢逛</text>
+    <circle cx="1050" cy="220" r="34" fill="#5b83c2"/>
+    <text x="1050" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D5</text>
+    <text x="1050" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">云杉坪</text>
+    <text x="1050" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">蓝月谷四湖</text>
+    <circle cx="1270" cy="220" r="34" fill="#8f6fb3"/>
+    <text x="1270" y="228" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ffffff" font-weight="700">D6</text>
+    <text x="1270" y="285" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f">丽江机场</text>
+    <text x="1270" y="314" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">还车返程</text>
+    <text x="80" y="374" font-size="17" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">说明：这是行程示意图，用来看路线顺序和串联关系，不替代导航地图。</text>
+  </svg>
+
+  <h3>D1 昆明轻松路线</h3>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="D1 昆明路线图">
+    <rect width="1200" height="420" fill="#fffdf8"/>
+    <text x="70" y="68" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1f4d57" font-weight="700">D1 昆明轻松路线示意</text>
+    <text x="70" y="105" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#587278">落地日只做轻松活动，不拉远线</text>
+    <rect x="110" y="170" width="240" height="120" rx="22" fill="#f3ead6" stroke="#d8c9a6"/>
+    <text x="230" y="220" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">酒店入住</text>
+    <text x="230" y="255" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">昆明站 / 塘子巷</text>
+    <line x1="350" y1="230" x2="540" y2="230" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="540,230 514,218 514,242" fill="#9cc8bf"/>
+    <rect x="570" y="150" width="240" height="160" rx="22" fill="#e9f3ef" stroke="#bfd8d0"/>
+    <text x="690" y="205" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">昆明老街</text>
+    <text x="690" y="240" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">边逛边吃</text>
+    <line x1="810" y1="230" x2="980" y2="230" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="980,230 954,218 954,242" fill="#9cc8bf"/>
+    <rect x="1000" y="170" width="150" height="120" rx="22" fill="#eef6fa" stroke="#c8dce6"/>
+    <text x="1075" y="220" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">南屏街</text>
+    <text x="1075" y="255" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">晚餐后回酒店</text>
+  </svg>
+
+  <h3>D2 大理抵达路线</h3>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-label="D2 大理抵达路线图">
+    <rect width="1400" height="520" fill="#fffdf8"/>
+    <text x="70" y="68" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1f4d57" font-weight="700">D2 昆明 → 大理路线示意</text>
+    <text x="70" y="105" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#587278">关键词：高铁到大理，取车后只保留古城 + 洱海日落，不再冲双廊</text>
+    <rect x="90" y="180" width="220" height="120" rx="22" fill="#f3ead6" stroke="#d8c9a6"/>
+    <text x="200" y="226" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">大理站取车</text>
+    <text x="200" y="262" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">建议中午前后完成</text>
+    <line x1="310" y1="240" x2="470" y2="240" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="470,240 444,228 444,252" fill="#9cc8bf"/>
+    <rect x="500" y="150" width="240" height="150" rx="22" fill="#e9f3ef" stroke="#bfd8d0"/>
+    <text x="620" y="202" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">大理古城</text>
+    <text x="620" y="236" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">下午主逛点</text>
+    <text x="620" y="266" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">吃饭方便，节奏最稳</text>
+    <line x1="740" y1="225" x2="920" y2="225" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="920,225 894,213 894,237" fill="#9cc8bf"/>
+    <rect x="950" y="130" width="290" height="190" rx="22" fill="#e7f3f7" stroke="#c2dbe3"/>
+    <text x="1095" y="184" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">洱海日落点</text>
+    <text x="1095" y="220" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">才村 / 龙龛 / S 湾</text>
+    <text x="1095" y="254" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">三选一即可</text>
+    <text x="1095" y="286" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">适合拍照、散步、看晚霞</text>
+    <rect x="500" y="360" width="420" height="90" rx="18" fill="#fff4e9" stroke="#e8c49b"/>
+    <text x="710" y="398" text-anchor="middle" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#8b5a2b" font-weight="700">走法重点</text>
+    <text x="710" y="430" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#7c6a56">D2 不再绕去双廊，避免第一天抵达后赶路太多。</text>
+  </svg>
+
+  <h3>D3 大理亲子主路线</h3>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-label="D3 大理亲子路线图">
+    <rect width="1400" height="620" fill="#fffdf8"/>
+    <text x="70" y="68" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1f4d57" font-weight="700">D3 大理亲子路线示意</text>
+    <text x="70" y="105" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#587278">主线：云上草原作为孩子主项目；下午只接 1 到 2 个轻松点位</text>
+    <rect x="80" y="185" width="220" height="120" rx="22" fill="#f5efe2" stroke="#dccdaa"/>
+    <text x="190" y="230" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">住宿出发</text>
+    <text x="190" y="266" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">大理古城 / S 湾</text>
+    <line x1="300" y1="245" x2="470" y2="245" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="470,245 444,233 444,257" fill="#9cc8bf"/>
+    <rect x="500" y="145" width="270" height="180" rx="22" fill="#e7f4e3" stroke="#bfd7b7"/>
+    <text x="635" y="205" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">云上草原</text>
+    <text x="635" y="243" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">上午主项目</text>
+    <text x="635" y="274" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">缆车 + 草地活动 + 拍照</text>
+    <text x="635" y="305" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">晴天价值最高</text>
+    <line x1="770" y1="235" x2="945" y2="235" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="945,235 919,223 919,247" fill="#9cc8bf"/>
+    <rect x="970" y="150" width="240" height="170" rx="22" fill="#f6efe7" stroke="#dfcdb9"/>
+    <text x="1090" y="205" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">喜洲古镇</text>
+    <text x="1090" y="240" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">中午吃饭</text>
+    <text x="1090" y="271" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">粑粑 / 家常菜</text>
+    <line x1="1090" y1="320" x2="1090" y2="410" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="1090,410 1078,384 1102,384" fill="#9cc8bf"/>
+    <rect x="930" y="430" width="320" height="120" rx="22" fill="#e7f3f7" stroke="#c2dbe3"/>
+    <text x="1090" y="475" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">海西轻松线</text>
+    <text x="1090" y="510" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">拍照、散步、孩子活动</text>
+    <rect x="80" y="390" width="700" height="150" rx="22" fill="#f8f2fb" stroke="#d8c5e9"/>
+    <text x="120" y="438" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#6f4f94" font-weight="700">天气不好时的备选线</text>
+    <text x="120" y="480" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">双廊 → 小普陀 → 文笔村 → 理想邦</text>
+    <text x="120" y="516" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">这条海东线更偏拍照，不建议再和云上草原同天硬拼。</text>
+  </svg>
+
+  <h3>D4-D5 丽江路线</h3>
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-label="D4 D5 丽江路线图">
+    <rect width="1400" height="760" fill="#fffdf8"/>
+    <text x="70" y="68" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1f4d57" font-weight="700">D4-D5 丽江路线示意</text>
+    <text x="70" y="105" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#587278">D4 只做转场和轻松慢逛；D5 再完整进入玉龙雪山景区</text>
+    <text x="80" y="158" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f" font-weight="700">D4 大理 → 丽江</text>
+    <rect x="90" y="190" width="230" height="120" rx="22" fill="#f5efe2" stroke="#dccdaa"/>
+    <text x="205" y="236" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">大理住宿出发</text>
+    <text x="205" y="270" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">约 2-3 小时车程</text>
+    <line x1="320" y1="250" x2="500" y2="250" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="500,250 474,238 474,262" fill="#9cc8bf"/>
+    <rect x="530" y="170" width="250" height="160" rx="22" fill="#eef6fa" stroke="#c8dce6"/>
+    <text x="655" y="225" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">丽江住宿</text>
+    <text x="655" y="258" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">束河 / 白沙附近</text>
+    <text x="655" y="290" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">放行李后轻装出门</text>
+    <line x1="780" y1="250" x2="975" y2="250" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="975,250 949,238 949,262" fill="#9cc8bf"/>
+    <rect x="1000" y="170" width="270" height="160" rx="22" fill="#e9f3ef" stroke="#bfd8d0"/>
+    <text x="1135" y="224" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">白沙 / 束河</text>
+    <text x="1135" y="258" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">二选一慢逛</text>
+    <text x="1135" y="290" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">拍照 + 让孩子活动</text>
+    <text x="80" y="420" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#24484f" font-weight="700">D5 玉龙雪山景区</text>
+    <rect x="90" y="460" width="220" height="120" rx="22" fill="#f5efe2" stroke="#dccdaa"/>
+    <text x="200" y="507" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">丽江住宿出发</text>
+    <text x="200" y="541" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">建议早点出发</text>
+    <line x1="310" y1="520" x2="465" y2="520" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="465,520 439,508 439,532" fill="#9cc8bf"/>
+    <rect x="490" y="440" width="230" height="160" rx="22" fill="#eef6fa" stroke="#c8dce6"/>
+    <text x="605" y="494" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">玉龙雪山景区</text>
+    <text x="605" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">先到游客中心</text>
+    <text x="605" y="560" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">按票务进场</text>
+    <line x1="720" y1="520" x2="885" y2="520" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="885,520 859,508 859,532" fill="#9cc8bf"/>
+    <rect x="910" y="440" width="220" height="160" rx="22" fill="#e7f4e3" stroke="#bfd7b7"/>
+    <text x="1020" y="494" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">云杉坪</text>
+    <text x="1020" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">默认主线</text>
+    <text x="1020" y="560" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">小索道上山</text>
+    <line x1="1130" y1="520" x2="1260" y2="520" stroke="#9cc8bf" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="1260,520 1234,508 1234,532" fill="#9cc8bf"/>
+    <text x="1195" y="496" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">步行约 600 米</text>
+    <rect x="1160" y="440" width="190" height="160" rx="22" fill="#e7f3f7" stroke="#c2dbe3"/>
+    <text x="1255" y="494" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#23484f" font-weight="700">蓝月谷</text>
+    <text x="1255" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">玉液湖</text>
+    <text x="1255" y="554" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5b7277">镜潭湖 → 蓝月湖 → 听涛湖</text>
+    <text x="90" y="675" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5c7378">说明：如果天气太差，可把 D5 改成白沙 + 束河轻松慢逛，不硬冲雪山。</text>
+  </svg>
+
+  <p class="small">说明：本文件为详细排版版，适合导出 Word 后发送家人或同行人查看。若要继续优化样式，可在对应 HTML 文件上直接修改后重新导出。</p>
+</body>
+</html>
