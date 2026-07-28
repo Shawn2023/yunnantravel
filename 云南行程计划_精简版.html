@@ -30,20 +30,20 @@
       margin-bottom: 22px;
       font-size: 8.5pt;
     }
-    img.hero {
+    .hero {
       width: 100%;
       max-width: 760px;
       display: block;
-      margin: 0 auto 22px auto;
+      margin: 0 auto 10px auto;
       border-radius: 12px;
       border: 1px solid #d7e6e4;
       background: #eef7f5;
     }
-    img.section-visual {
+    .section-visual {
       width: 100%;
       max-width: 720px;
       display: block;
-      margin: 8px auto 14px auto;
+      margin: 2px auto 8px auto;
       border-radius: 10px;
       border: 1px solid #dbe7e4;
       background: #f8fcfb;
@@ -85,7 +85,39 @@
   <h1>云南行程计划精简版</h1>
   <div class="subtitle">2026-08-06 至 2026-08-11｜1 天昆明 + 2 天大理 + 2 天丽江｜亲子轻松线</div>
 
-  <img class="hero" src="云南风景插图.svg" alt="云南雪山洱海与米线插图" />
+  <svg class="hero" xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="40 150 1120 250" role="img" aria-label="云南雪山洱海与米线插图">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#d8f0ff"/>
+        <stop offset="100%" stop-color="#fef7e7"/>
+      </linearGradient>
+      <linearGradient id="lake" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7cc9d8"/>
+        <stop offset="100%" stop-color="#9fe0c9"/>
+      </linearGradient>
+      <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6c8891"/>
+        <stop offset="100%" stop-color="#46646c"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="520" fill="url(#sky)"/>
+    <circle cx="970" cy="110" r="54" fill="#ffd67a" opacity="0.9"/>
+    <path d="M90 350 L250 170 L400 350 Z" fill="url(#mountain)"/>
+    <path d="M250 170 L315 255 L205 255 Z" fill="#f7fbff" opacity="0.95"/>
+    <path d="M290 350 L470 140 L650 350 Z" fill="#5f7b84"/>
+    <path d="M470 140 L540 235 L415 235 Z" fill="#f7fbff" opacity="0.95"/>
+    <path d="M520 350 L710 185 L870 350 Z" fill="#78939a"/>
+    <path d="M710 185 L765 250 L655 250 Z" fill="#f7fbff" opacity="0.92"/>
+    <ellipse cx="610" cy="404" rx="520" ry="78" fill="url(#lake)"/>
+    <ellipse cx="610" cy="420" rx="450" ry="32" fill="#ffffff" opacity="0.28"/>
+    <path d="M840 330 C890 308 960 308 1010 330" fill="none" stroke="#f8f1da" stroke-width="18" stroke-linecap="round"/>
+    <path d="M838 332 C890 358 958 358 1012 332" fill="none" stroke="#b88953" stroke-width="18" stroke-linecap="round"/>
+    <ellipse cx="925" cy="365" rx="115" ry="26" fill="#f3f3f3"/>
+    <path d="M850 360 C880 332 970 332 1000 360" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M868 356 C894 378 957 378 982 356" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <text x="90" y="95" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" fill="#35535d">云南轻松亲子行</text>
+    <text x="90" y="138" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="18" fill="#58737c">雪山、洱海、古城与一碗热米线</text>
+  </svg>
 
   <div class="note">
     核心思路：昆明只做落地休整；大理重点放古城、云上草原、喜洲和洱海轻松线；丽江去玉龙雪山景区，但默认走云杉坪 + 蓝月谷，不把高海拔冲顶当刚需。整体以孩子游玩和拍照为主。
@@ -128,7 +160,36 @@
   </table>
 
   <h2>三、住宿建议</h2>
-  <img class="section-visual" src="洱海古镇插图.svg" alt="大理洱海与古镇插图" />
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1200" height="185" viewBox="70 165 1060 185" role="img" aria-label="大理洱海与古镇插图">
+    <defs>
+      <linearGradient id="sky-erhai" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#dff3ff"/>
+        <stop offset="100%" stop-color="#fff6e8"/>
+      </linearGradient>
+      <linearGradient id="water-erhai" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7bc8df"/>
+        <stop offset="100%" stop-color="#96e0cf"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="420" fill="url(#sky-erhai)"/>
+    <circle cx="980" cy="90" r="42" fill="#ffd885"/>
+    <rect x="0" y="268" width="1200" height="152" fill="url(#water-erhai)"/>
+    <path d="M0 290 C160 250 330 250 470 292 C620 336 770 334 1200 275 L1200 420 L0 420 Z" fill="#8dd9c8" opacity="0.55"/>
+    <path d="M120 265 L220 180 L320 265 Z" fill="#f5f0e8"/>
+    <rect x="145" y="215" width="150" height="70" fill="#fbf7ef"/>
+    <rect x="176" y="234" width="28" height="26" fill="#97c0d1"/>
+    <rect x="236" y="234" width="28" height="26" fill="#97c0d1"/>
+    <rect x="206" y="245" width="28" height="40" fill="#b68258"/>
+    <path d="M335 265 L410 200 L485 265 Z" fill="#efe6db"/>
+    <rect x="352" y="228" width="116" height="57" fill="#fffaf3"/>
+    <rect x="370" y="244" width="24" height="20" fill="#9fc7d7"/>
+    <rect x="425" y="244" width="24" height="20" fill="#9fc7d7"/>
+    <path d="M540 285 C610 205 700 205 775 285" fill="none" stroke="#c7a370" stroke-width="14" stroke-linecap="round"/>
+    <path d="M551 286 C614 226 688 226 760 286" fill="none" stroke="#f6ead8" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="660" cy="302" rx="138" ry="18" fill="#ffffff" opacity="0.35"/>
+    <text x="88" y="82" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="30" fill="#305962">大理洱海慢时光</text>
+    <text x="88" y="118" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5c777b">古城、海风、白族民居与日落</text>
+  </svg>
   <ul>
     <li>昆明：昆明站 / 塘子巷。舒适型约 250-450 元 / 晚。</li>
     <li>大理：大理古城或 S 湾附近。舒适型约 300-600 元 / 晚，景观民宿约 500-1200 元 / 晚。</li>
@@ -144,7 +205,35 @@
   </ul>
 
   <h2>五、吃什么最值得</h2>
-  <img class="section-visual" src="云南美食插图.svg" alt="云南特色美食插图" />
+  <svg class="section-visual" xmlns="http://www.w3.org/2000/svg" width="1200" height="165" viewBox="120 160 960 165" role="img" aria-label="云南特色美食插图">
+    <defs>
+      <linearGradient id="food-bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff7ea"/>
+        <stop offset="100%" stop-color="#f7fbf5"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="420" fill="url(#food-bg)"/>
+    <ellipse cx="365" cy="258" rx="188" ry="74" fill="#f6f0ea"/>
+    <ellipse cx="365" cy="247" rx="165" ry="55" fill="#fffdf9" stroke="#d8d0c8" stroke-width="6"/>
+    <path d="M250 244 C295 214 335 279 382 230 C420 192 460 255 493 228" fill="none" stroke="#f0b85d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M245 262 C282 244 310 274 343 246 C380 214 413 278 475 240" fill="none" stroke="#8cbc69" stroke-width="9" stroke-linecap="round"/>
+    <path d="M300 221 C315 201 333 201 347 222" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M350 210 C364 190 382 191 395 212" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M405 214 C418 193 438 193 451 214" fill="none" stroke="#d2d2d2" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="853" cy="256" rx="198" ry="80" fill="#efe4d8"/>
+    <ellipse cx="853" cy="244" rx="171" ry="60" fill="#7f4b35"/>
+    <ellipse cx="853" cy="244" rx="139" ry="45" fill="#9b5d41"/>
+    <circle cx="786" cy="231" r="18" fill="#d8b28d"/>
+    <circle cx="842" cy="250" r="20" fill="#d8b28d"/>
+    <circle cx="900" cy="228" r="18" fill="#d8b28d"/>
+    <circle cx="936" cy="257" r="16" fill="#d8b28d"/>
+    <path d="M760 221 C776 234 789 238 805 243" fill="none" stroke="#83b66f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M875 216 C892 228 904 233 922 239" fill="none" stroke="#83b66f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M820 216 C832 200 846 198 860 217" fill="none" stroke="#ececec" stroke-width="4" stroke-linecap="round"/>
+    <path d="M900 209 C912 192 926 192 939 210" fill="none" stroke="#ececec" stroke-width="4" stroke-linecap="round"/>
+    <text x="104" y="90" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="30" fill="#6b4f36">云南味道</text>
+    <text x="104" y="126" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#8a6c54">过桥米线与腊排骨火锅</text>
+  </svg>
   <ul>
     <li>昆明：过桥米线、汽锅鸡、鲜花饼。</li>
     <li>大理：喜洲粑粑、白族酸辣鱼、黄焖鸡、木瓜水。</li>
